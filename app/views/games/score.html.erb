@@ -1,0 +1,9 @@
+<% if @word.chars.all? { |letter| @letters.include?(letter) } %>
+  <% if @result["found"] == true %>
+    <p>Congratulations! <%= @word  %> is an English word!</p>
+  <% end %>
+<% else %>
+  <p>Sorry but <%= @word %> cannot be formed from <%= @letters %></p>
+<% end %>
+
+<%= link_to "Play Again", new_path %>
