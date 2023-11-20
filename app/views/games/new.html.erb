@@ -1,1 +1,8 @@
-<%= @letters %>
+<div class="container game-container">
+  <h1>New game</h1>
+  <ul class = "random-letters">
+    <% @letters.each do |letter| %>
+      <li class="letter"><%= letter %></li>
+    <% end %>
+  </ul>
+</div>
