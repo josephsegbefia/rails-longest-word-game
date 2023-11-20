@@ -65,3 +65,25 @@
    border-top-right-radius: 0;
    border-bottom-right-radius: 0;
   }
+
+  p {
+    border-left: 5px solid grey;
+    padding: 50px;
+    color: white
+  }
+
+  .success{
+    background-color: #5cb85c;
+  }
+
+  .fail{
+    background-color: red;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .link {
+    text-decoration: none;
+  }

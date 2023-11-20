@@ -1,9 +1,10 @@
-<% if @word.chars.all? { |letter| @letters.include?(letter) } %>
+<div class = "container">
+  <% if @word.chars.all? { |letter| @letters.include?(letter) } %>
   <% if @result["found"] == true %>
-    <p>Congratulations! <%= @word  %> is an English word!</p>
+    <p class = "success">Congratulations! <%= @word  %> is an English word!</p>
   <% end %>
 <% else %>
-  <p>Sorry but <%= @word %> cannot be formed from <%= @letters %></p>
+  <p class = "fail">Sorry but <%= @word %> cannot be formed from <%= @letters %></p>
 <% end %>
-
-<%= link_to "Play Again", new_path %>
+<%= link_to "Play Again", new_path, class: "link" %>
+</div>
