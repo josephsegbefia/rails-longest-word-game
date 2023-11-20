@@ -6,5 +6,8 @@ class GamesController < ApplicationController
   end
 
   def score
+    # @word = params[:word]
+    # print @word
+    raise
   end
 end

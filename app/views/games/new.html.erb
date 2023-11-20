@@ -7,13 +7,13 @@
   </ul>
   <div class = "form-container">
   <div class="row justify-content-center">
-    <form action="/score" data-turbo="false">
-      <label for="question" class="form-label">What is the longest word you can find?</label>
+    <form action="/score" method = "POST" data-turbo="false">
+      <label for="word" class="form-label">What is the longest word you can find?</label>
       <div class = "input-and-button">
-        <input type="text" class = "form-control input-space" name = "question" id = "question">
+        <input type="text" class = "form-control input-space" name = "word" id = "word" value="<%= params[:word]%>">
         <input class = "button" type="submit" value="Play">
-        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       </div>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
     </form>
   </div>
 </div>
