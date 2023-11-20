@@ -5,4 +5,17 @@
       <li class="letter"><%= letter %></li>
     <% end %>
   </ul>
+  <div class = "form-container">
+  <div class="row justify-content-center">
+    <form action="/score" data-turbo="false">
+      <label for="question" class="form-label">What is the longest word you can find?</label>
+      <div class = "input-and-button">
+        <input type="text" class = "form-control input-space" name = "question" id = "question">
+        <input class = "button" type="submit" value="Play">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      </div>
+    </form>
+  </div>
+</div>
+
 </div>

@@ -43,3 +43,25 @@
   border: 3px solid black;
   margin: 100px auto;
  }
+
+ .input-and-button {
+  display: flex;
+  }
+  .form-container {
+   width: 600px;
+   margin: 50px auto;
+
+  }
+
+  .button {
+   border: none;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+   background-color: #237fb7;
+   width: 100px;
+  }
+
+  .input-space {
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+  }
